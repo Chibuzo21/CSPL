@@ -1,12 +1,9 @@
 import React from "react";
-import { Book } from "../../../../../types/book";
+import { BookParams } from "./types";
 
-interface IntroParams {
-  book: Book;
-}
-export default function Introduction({ book }: IntroParams) {
+export default function Introduction({ book }: BookParams) {
   return (
-    <section className='mb-12'>
+    <section className='mb-12' id='book-summary'>
       <h2 className='text-3xl font-bold text-gray-900 dark:text-white mb-6'>
         Summary
       </h2>

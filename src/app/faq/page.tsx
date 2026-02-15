@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import FAQMain from "./components/FAQMain";
+import Button from "../components/Button";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "FAQ - Frequently Asked Questions",
@@ -29,11 +31,9 @@ export default function FAQPage() {
         <p className=' text-blue-100 dark:text-gray-300 mb-8 text-xl'>
           Can't find the answer you're looking for? We're here to help.
         </p>
-        <a
-          href='/contact'
-          className='inline-block bg-secondary-600 hover:bg-secondary-700 text-white font-bold px-8 py-3 rounded-lg shadow-lg transition-all duration-200 hover:shadow-xl'>
-          Contact Us
-        </a>
+        <Link href='/contact'>
+          <Button>Contact Us</Button>
+        </Link>
       </div>
     </div>
   );

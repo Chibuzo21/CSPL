@@ -67,7 +67,7 @@ export default function Pagination({
                 disabled={page === "..."}
                 className={`px-4 py-2 rounded-lg font-medium transition-colors ${
                   page === currentPage
-                    ? "bg-purple-600 text-white"
+                    ? "bg-primary-900 text-white"
                     : page === "..."
                       ? "bg-transparent text-gray-400 cursor-default"
                       : "bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 border border-gray-300 dark:border-gray-600"

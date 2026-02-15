@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react";
 import { books } from "../../../../data/books";
 import { isearchInputParams } from "./types";
+import { styles } from "@/lib/utils";
 export default function SearchInput({
   handleSearch,
   searchQuery,
@@ -28,7 +29,7 @@ export default function SearchInput({
           value={searchQuery}
           onChange={(e) => handleSearch(e.target.value)}
           placeholder='Search by title, author, genre, or description...'
-          className='block w-full pl-10 pr-3 py-3 border border-gray-300 dark:border-gray-600 rounded-lg leading-5 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent'
+          className={`pl-10 ${styles.default}`}
         />
         {searchQuery && (
           <button

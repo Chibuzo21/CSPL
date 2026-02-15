@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Button from "../components/Button";
 
 export default function CTA() {
   return (
@@ -12,10 +13,8 @@ export default function CTA() {
           Browse the complete collection and find your next favorite book. Free
           previews available for all titles.
         </p>
-        <Link
-          href='/blog'
-          className='inline-block bg-secondary-600 hover:bg-secondary-700 text-white font-bold px-8 py-3 rounded-lg shadow-lg transition-all duration-200 hover:shadow-xl'>
-          Explore All Books →
+        <Link href='/blog'>
+          <Button>Explore All Books →</Button>
         </Link>
       </div>
     </section>

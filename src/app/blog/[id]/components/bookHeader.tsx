@@ -1,35 +1,75 @@
+"use client";
 import React from "react";
+import Image from "next/image";
+import Button from "@/app/components/Button";
+import { BookParams } from "./types";
 
-export default function BookHeader({ book }) {
+export default function BookHeader({ book }: BookParams) {
   return (
     <div className='mb-12'>
-      <h1 className='text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4'>
-        {book.title}
-      </h1>
-      <p className='text-xl text-gray-600 dark:text-gray-400 mb-4'>
-        by {book.author}
-      </p>
-      <div className='flex flex-wrap gap-2 mb-6'>
-        {book.genre.map((genre) => (
-          <span
-            key={genre}
-            className='px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-sm rounded-full'>
-            {genre}
-          </span>
-        ))}
-      </div>
-      <p className='text-lg text-gray-700 dark:text-gray-300 mb-6'>
-        {book.description}
-      </p>
+      <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-8'>
+        {/* LEFT: Book Cover Image */}
+        <div className='flex justify-center lg:justify-start'>
+          <div className='relative w-full max-w-md'>
+            <Image
+              src={book.coverImage}
+              alt={`${book.title} book cover`}
+              width={400}
+              height={600}
+              className='rounded-xl shadow-2xl w-full h-auto object-cover border-4 border-white dark:border-gray-800'
+              priority
+            />
+          </div>
+        </div>
 
-      {/* Amazon CTA */}
-      <a
-        href={book.amazonLink}
-        target='_blank'
-        rel='noopener noreferrer'
-        className='inline-block bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold px-8 py-3 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg'>
-        Buy on Amazon
-      </a>
+        {/* RIGHT: Book Information */}
+        <div className='flex flex-col justify-center'>
+          <h1 className='text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 leading-tight'>
+            {book.title}
+          </h1>
+
+          <p className='text-xl text-primary-900 dark:text-primary-400 font-semibold mb-6'>
+            by {book.author}
+          </p>
+
+          <p className='text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed'>
+            {book.description}
+          </p>
+
+          {/* Genre Tags */}
+          {book.genre && book.genre.length > 0 && (
+            <div className='flex flex-wrap gap-2 mb-6'>
+              {book.genre.slice(0, 3).map((genre, index) => (
+                <span
+                  key={index}
+                  className='px-3 py-1 bg-primary-50 dark:bg-primary-900/20 text-primary-900 dark:text-primary-300 rounded-full text-sm font-medium'>
+                  {genre}
+                </span>
+              ))}
+            </div>
+          )}
+
+          {/* CTA Buttons */}
+          <div className='flex flex-col sm:flex-row gap-3'>
+            <a
+              href={book.amazonLink}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='inline-block'>
+              <Button>Buy on Amazon</Button>
+            </a>
+
+            <button
+              onClick={() => {
+                const summarySection = document.getElementById("book-summary");
+                summarySection?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className='px-6 py-3 border-2 border-primary-900 dark:border-primary-500 text-primary-900 dark:text-primary-400 rounded-lg font-semibold hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-all duration-200'>
+              Read Preview Below ↓
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

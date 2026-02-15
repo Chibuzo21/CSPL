@@ -23,37 +23,28 @@ export default function BookGrid2({
               <Link
                 key={book.id}
                 href={`/blog/${book.id}`}
-                className='group bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300'>
+                className='group bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:border-primary-200 dark:hover:border-primary-700 border border-transparent transition-all duration-300'>
                 <div className='relative h-96 bg-gray-200 dark:bg-gray-700'>
                   <div className='absolute inset-0 flex items-center justify-center text-gray-400'>
                     <Image
                       src={book.coverImage}
                       alt={book.title}
                       fill
-                      className=''
+                      className='object-cover'
                     />
                   </div>
                 </div>
                 <div className='p-6'>
-                  <h2 className='text-2xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors'>
+                  <h3 className='text-2xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-900 dark:group-hover:text-primary-400 transition-colors'>
                     {book.title}
-                  </h2>
+                  </h3>
                   <p className='text-sm text-gray-500 dark:text-gray-400 mb-3'>
                     by {book.author}
                   </p>
                   <p className='text-gray-600 dark:text-gray-300 mb-4 line-clamp-3'>
                     {book.description}
                   </p>
-                  <div className='flex flex-wrap gap-2 mb-4'>
-                    {book.genre.map((genre) => (
-                      <span
-                        key={genre}
-                        className='px-3 py-1 bg-blue-100 dark:bg-purple-900 text-purple-800 dark:text-blue-200 text-xs rounded-full'>
-                        {genre}
-                      </span>
-                    ))}
-                  </div>
-                  <div className='text-purple-600 dark:text-purple-400 font-medium group-hover:underline'>
+                  <div className='text-primary-900 dark:text-primary-400 font-medium group-hover:underline transition-colors'>
                     Read Preview →
                   </div>
                 </div>
@@ -92,7 +83,7 @@ export default function BookGrid2({
           </p>
           <button
             onClick={() => handleSearch("")}
-            className='bg-purple-600 hover:bg-purple-700 text-white font-medium px-6 py-2 rounded-lg transition-colors'>
+            className='bg-primary-900 hover:bg-primary-800 text-white font-medium px-6 py-2 rounded-lg transition-colors'>
             Clear Search
           </button>
         </div>

@@ -5,6 +5,7 @@ import BookHeader from "./components/bookHeader";
 import BookReview from "./components/bookReview";
 import ReadMore from "./components/ReadMore";
 import Introduction from "./components/introduction";
+import Link from "next/link";
 
 interface BookPageProps {
   params: {
@@ -54,27 +55,28 @@ export default async function BookPage({ params }: BookPageProps) {
   }
 
   return (
-    <div className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
-      {/* Back button */}
-      <a
-        href='/blog'
-        className='inline-flex items-center text-purple-600 dark:text-purple-400 hover:underline mb-8'>
-        ← Back to all books
-      </a>
+    <section className=' py-12'>
+      <div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-3'>
+        {/* Back button */}
+        <Link
+          href='/blog'
+          className='inline-flex items-center text-primary-900 dark:text-primary-400 font-medium hover:underline transition-colors mb-8'>
+          ← Back to all books
+        </Link>
 
-      {/* Book header */}
+        {/* Book header */}
 
-      <BookHeader book={book} />
-      {/* Reader Reviews */}
-      <BookReview book={book} />
-      {/* Divider */}
-      <div className='border-t border-gray-200 dark:border-gray-800 my-12'></div>
-      {/* Prologue (if exists) */}
-      {/* Introduction */}
-      <Introduction book={book} />
-
+        <BookHeader book={book} />
+        {/* Reader Reviews */}
+        <BookReview book={book} />
+        {/* Divider */}
+        <div className='border-t border-gray-200 dark:border-gray-800 my-12'></div>
+        {/* Prologue (if exists) */}
+        {/* Introduction */}
+        <Introduction book={book} />
+      </div>
       {/* Bottom CTA */}
       <ReadMore book={book} />
-    </div>
+    </section>
   );
 }
