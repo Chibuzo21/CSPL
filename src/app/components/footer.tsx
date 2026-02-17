@@ -27,28 +27,28 @@ export default function Footer() {
               <li>
                 <a
                   href='/'
-                  className='text-primary-900 dark:text-primary-400 font-medium group-hover:underline transition-colors'>
+                  className='text-primary-900 dark:text-primary-400 font-medium hover:underline transition-colors'>
                   Home
                 </a>
               </li>
               <li>
                 <a
                   href='/blog'
-                  className='text-primary-900 dark:text-primary-400 font-medium group-hover:underline transition-colors'>
+                  className='text-primary-900 dark:text-primary-400 font-medium hover:underline transition-colors'>
                   All Books
                 </a>
               </li>
               <li>
                 <a
                   href='/about'
-                  className='text-primary-900 dark:text-primary-400 font-medium group-hover:underline transition-colors'>
+                  className='text-primary-900 dark:text-primary-400 font-medium hover:underline transition-colors'>
                   About
                 </a>
               </li>
               <li>
                 <a
                   href='/faq'
-                  className='text-primary-900 dark:text-primary-400 font-medium group-hover:underline transition-colors'>
+                  className='text-primary-900 dark:text-primary-400 font-medium hover:underline transition-colors'>
                   FAQ
                 </a>
               </li>
@@ -64,14 +64,14 @@ export default function Footer() {
               <li>
                 <a
                   href='/contact'
-                  className='text-primary-900 dark:text-primary-400 font-medium group-hover:underline transition-colors'>
+                  className='text-primary-900 dark:text-primary-400 font-medium hover:underline transition-colors'>
                   Contact Us
                 </a>
               </li>
               <li>
                 <a
                   href='mailto:uchibueze@cspl.com'
-                  className='text-primary-900 dark:text-primary-400 font-medium group-hover:underline transition-colors'>
+                  className='text-primary-900 dark:text-primary-400 font-medium hover:underline transition-colors'>
                   Email
                 </a>
               </li>

@@ -1,14 +1,17 @@
 export const testimonialList = [
   {
-    name: "Sarah M.",
+    name: "Chibuzo Nnamdi.",
     quote: "Absolutely life-changing. Each page strengthened my faith.",
+    image: "/chibu.jpeg",
   },
   {
-    name: "Michael R.",
+    name: "Chiduziem Emmanuel.",
     quote: "Insightful and uplifting, perfect for daily reflection.",
+    image: "/chidu.jpeg",
   },
   {
-    name: "Jennifer K.",
+    name: "Chinonso John.",
     quote: "A true guide to understanding God's promises.",
+    image: "/Dennis.png",
   },
 ];
