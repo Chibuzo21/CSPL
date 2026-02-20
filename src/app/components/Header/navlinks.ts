@@ -7,6 +7,10 @@ export const navlinks = [
     title: "Blog",
     href: "/blog",
   },
+  {
+    title: "Books",
+    href: "/books",
+  },
 
   {
     title: "About",

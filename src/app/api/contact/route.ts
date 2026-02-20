@@ -33,7 +33,7 @@ export async function POST(request: NextRequest) {
 
     const result = await resend.emails.send({
       from: "CSPL <onboarding@resend.dev>",
-      to: [process.env.CONTACT_EMAIL || "uchibueze@cspl.com"],
+      to: [process.env.CONTACT_EMAIL || "chibueze1953@gmail.com"],
       replyTo: Email,
       subject: `📚 Book Inquiry: ${Subject} - ${Name}`,
       html: `

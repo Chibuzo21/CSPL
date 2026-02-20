@@ -52,11 +52,11 @@ export const faqData = [
   {
     question: "Can I leave a review?",
     answer:
-      "We'd love to hear from you! You can leave reviews on the book's Amazon page or on Goodreads. Reader reviews help other readers discover great books and provide valuable feedback.",
+      "We'd love to hear from you! You can leave reviews on the book's Amazon page or on our contact page. Reader reviews help other readers discover great books and provide valuable feedback.",
   },
   {
     question: "Are the books appropriate for young readers?",
     answer:
-      "Content ratings vary by book. Check each book's description and genre tags for guidance. If you have specific concerns about content, feel free to contact us for more detailed information.",
+      "All our books are christain books and therefore do not have any offensive or obscene content in any book. Joseph: A story of faith and forgiveness is written for 8 to 15 years old.The other books can be read by both young and old.",
   },
 ];

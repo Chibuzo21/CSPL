@@ -13,7 +13,7 @@ export default function Connect() {
 
       {/* Phone Number */}
       <div className='mb-6 flex items-center text-white dark:text-gray-300'>
-        <div className='w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center mr-3'>
+        <div className='w-12 h-12 rounded-full bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center mr-3'>
           <svg
             viewBox='0 0 24 24'
             fill='none'
@@ -21,7 +21,7 @@ export default function Connect() {
             strokeWidth='2'
             strokeLinecap='round'
             strokeLinejoin='round'
-            className='w-5 h-5 text-primary-900 dark:text-primary-400'>
+            className='w-6 h-6 text-primary-900 dark:text-primary-400'>
             <path d='M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z' />
           </svg>
         </div>
@@ -29,7 +29,10 @@ export default function Connect() {
           <div className='text-xs text-gray-100 dark:text-gray-400'>
             Call us
           </div>
-          <div className='font-medium'>+234 812 818 1620</div>
+          <div className='font-medium'>
+            <p>+234-812-818-1620 (Whatsapp only)</p>
+            <p>+1 (347)-969-2477</p>
+          </div>
         </div>
       </div>
 

@@ -90,11 +90,9 @@ export default function Hero() {
           {/* Book Categories */}
           <div className='flex flex-wrap justify-center gap-3'>
             <span className='px-4 py-2 bg-white/10 backdrop-blur-sm dark:bg-gray-800 rounded-full text-sm font-medium text-white dark:text-gray-300 shadow-sm border border-white/20'>
-              📖 Biblical Fiction
+              📖 Biblical Non-Fiction
             </span>
-            <span className='px-4 py-2 bg-white/10 backdrop-blur-sm dark:bg-gray-800 rounded-full text-sm font-medium text-white dark:text-gray-300 shadow-sm border border-white/20'>
-              ✝️ Devotionals
-            </span>
+
             <span className='px-4 py-2 bg-white/10 backdrop-blur-sm dark:bg-gray-800 rounded-full text-sm font-medium text-white dark:text-gray-300 shadow-sm border border-white/20'>
               🙏 Spiritual Growth
             </span>
