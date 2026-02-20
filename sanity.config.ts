@@ -1,27 +1,25 @@
-/**
- * This configuration is used to for the Sanity Studio that’s mounted on the `\src\app\studio\[[...tool]]\page.tsx` route
- */
-
-import { visionTool } from "@sanity/vision";
+import React from "react"; // must be first for Turbopack
 import { defineConfig } from "sanity";
 import { structureTool } from "sanity/structure";
-// Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
 import { apiVersion, dataset, projectId } from "./src/sanity/env";
 import { schemaTypes } from "./src/sanity/schemaTypes/index";
 import { structure } from "./src/sanity/structure";
 
 const isDev = process.env.NODE_ENV === "development";
 
+async function loadPlugins() {
+  if (!isDev) return [];
+  const { visionTool } = await import("@sanity/vision");
+  return [visionTool({ defaultApiVersion: apiVersion })];
+}
+
 export default defineConfig({
   basePath: "/studio",
   projectId,
   dataset,
-  // Add and edit the content schema in the './sanity/schemaTypes' folder
   schema: { types: schemaTypes },
   plugins: [
     structureTool({ structure }),
-    // Vision is for querying with GROQ from inside the Studio
-    // https://www.sanity.io/docs/the-vision-plugin
-    ...(isDev ? [visionTool({ defaultApiVersion: apiVersion })] : []),
-  ],
+    // dynamic plugins will be appended at runtime
+  ].concat(await loadPlugins()),
 });
