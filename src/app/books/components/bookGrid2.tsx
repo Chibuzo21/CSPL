@@ -22,16 +22,11 @@ export default function BookGrid2({
             {currentBooks.map((book) => (
               <Link
                 key={book.id}
-                href={`/blog/${book.id}`}
+                href={`/books/${book.id}`}
                 className='group bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:border-primary-200 dark:hover:border-primary-700 border border-transparent transition-all duration-300'>
                 <div className='relative h-96 bg-gray-200 dark:bg-gray-700'>
                   <div className='absolute inset-0 flex items-center justify-center text-gray-400'>
-                    <Image
-                      src={book.coverImage}
-                      alt={book.title}
-                      fill
-                      className='object-cover'
-                    />
+                    <Image src={book.coverImage} alt={book.title} fill />
                   </div>
                 </div>
                 <div className='p-6'>

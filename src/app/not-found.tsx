@@ -13,9 +13,9 @@ export default function NotFound() {
         Sorry, we couldn't find the book you're looking for.
       </p>
       <Link
-        href='/blog'
+        href='/books'
         className='inline-block bg-primary-900 hover:bg-primary-800 text-white font-bold px-8 py-3 rounded-lg transition-colors duration-200'>
-        Back to blog
+        Back to books
       </Link>
     </div>
   );

@@ -20,7 +20,7 @@ export default function BookGrid() {
         {featuredBooks.map((book) => (
           <Link
             key={book.id}
-            href={`/blog/${book.id}`}
+            href={`/books/${book.id}`}
             className='group bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:border-primary-200 dark:hover:border-primary-700 border border-transparent transition-all duration-300'>
             <div className='relative h-96 bg-gray-200 dark:bg-gray-700'>
               <div className='absolute inset-0 flex items-center justify-center text-gray-400'>
@@ -28,7 +28,7 @@ export default function BookGrid() {
                   src={book.coverImage}
                   alt={book.title}
                   fill
-                  className='object-cover'
+                  className=''
                 />
               </div>
             </div>
@@ -52,7 +52,7 @@ export default function BookGrid() {
 
       <div className='text-center mt-12'>
         <Link
-          href='/blog'
+          href='/books'
           className='inline-block text-primary-900 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 hover:underline font-semibold text-lg transition-colors duration-200'>
           View All Books →
         </Link>

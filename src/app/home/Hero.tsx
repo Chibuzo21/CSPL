@@ -62,7 +62,7 @@ export default function Hero() {
 
           {/* CTAs */}
           <div className='flex flex-col sm:flex-row gap-4 justify-center mb-16'>
-            <Link href='/blog'>
+            <Link href='/books'>
               <Button>
                 <svg
                   className='w-5 h-5 mr-2'

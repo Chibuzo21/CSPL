@@ -59,7 +59,7 @@ export default async function BookPage({ params }: BookPageProps) {
       <div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-3'>
         {/* Back button */}
         <Link
-          href='/blog'
+          href='/books'
           className='inline-flex items-center text-primary-900 dark:text-primary-400 font-medium hover:underline transition-colors mb-8'>
           ← Back to all books
         </Link>

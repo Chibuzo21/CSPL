@@ -33,7 +33,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href='/blog'
+                  href='/books'
                   className='text-primary-900 dark:text-primary-400 font-medium hover:underline transition-colors'>
                   All Books
                 </a>
@@ -81,7 +81,7 @@ export default function Footer() {
 
         <div className='border-t border-gray-200 dark:border-gray-800 pt-8'>
           <p className='text-center text-gray-600 dark:text-gray-400 text-sm'>
-            © {new Date().getFullYear()} CSPL. All rights reserved.
+            © {new Date().getFullYear()} Chibueze Ukaegbu. All rights reserved.
           </p>
         </div>
       </div>

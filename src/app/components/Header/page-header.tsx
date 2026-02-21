@@ -9,8 +9,8 @@ export default function PageHeader() {
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-3'>
         <div className='flex justify-between h-16 items-center'>
           <div className='shrink-0'>
-            <Link href='/' className='text-2xl font-bold  '>
-              <Image src='/CSPLlogo.png' alt='logo' width={200} height={300} />
+            <Link href='/' className='text-2xl font-bold text-gray-700 '>
+              CHIBUEZE UKAEGBU
             </Link>
           </div>
           <DesktopMenu />

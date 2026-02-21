@@ -13,7 +13,7 @@ export default function CTA() {
           Browse the complete collection and find your next favorite book. Free
           previews available for all titles.
         </p>
-        <Link href='/blog'>
+        <Link href='/books'>
           <Button>Explore All Books →</Button>
         </Link>
       </div>
