@@ -1,5 +1,7 @@
 import { defineField, defineType } from "sanity";
-import { EditIcon, CogIcon, PlayIcon } from "@sanity/icons";
+import { EditIcon, PlayIcon } from "@sanity/icons";
+import { books } from "../../../data/books";
+import { Book } from "../../../types/book";
 
 export const blogPost = defineType({
   name: "blogPost",
@@ -20,7 +22,7 @@ export const blogPost = defineType({
     defineField({
       name: "slug",
       type: "slug",
-      group: "settings", // Moved to settings to keep content clean
+      group: "settings",
       options: {
         source: "title",
         maxLength: 96,
@@ -58,7 +60,6 @@ export const blogPost = defineType({
               name: "url",
               type: "url",
               title: "URL",
-              // Move the validation HERE, where the URL actually lives
               validation: (Rule) =>
                 Rule.custom((url) => {
                   if (!url) return true;
@@ -92,9 +93,19 @@ export const blogPost = defineType({
     }),
     defineField({
       name: "relatedBook",
+      title: "Related Book",
       type: "string",
       group: "settings",
-      description: "e.g., kingdom-driven-business",
+      description: "Select a book if this post is about a specific book",
+      options: {
+        list: books.map((book: Book) => {
+          return {
+            title: book.title,
+            value: book.id,
+          };
+        }),
+        layout: "dropdown",
+      },
     }),
     defineField({
       name: "enableComments",

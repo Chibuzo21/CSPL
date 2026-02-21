@@ -6,6 +6,7 @@ export default function SearchInput({
   handleSearch,
   searchQuery,
   filteredBooks,
+  placeholder,
 }: isearchInputParams) {
   return (
     <div className='max-w-2xl mx-auto mb-12'>
@@ -28,7 +29,7 @@ export default function SearchInput({
           type='text'
           value={searchQuery}
           onChange={(e) => handleSearch(e.target.value)}
-          placeholder='Search by title, author, genre, or description...'
+          placeholder={placeholder}
           className={`pl-10 ${styles.default}`}
         />
         {searchQuery && (

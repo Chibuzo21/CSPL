@@ -1,15 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import { BlogPost } from "../types";
 import { urlFor } from "@/sanity/lib/image";
-type posts = {
-  posts: BlogPost[];
-};
-export default function BlogGrid({ posts }: posts) {
+import { iBookGridParams } from "@/app/books/components/types";
+import { BOOKS_PER_PAGE } from "@/app/books/components/bookGrid2";
+
+export default function BlogGrid({
+  filteredBooks,
+  currentPage,
+}: iBookGridParams) {
+  const startIndex = (currentPage - 1) * BOOKS_PER_PAGE;
+  const endIndex = startIndex + BOOKS_PER_PAGE;
+  const currentPosts = filteredBooks.slice(startIndex, endIndex) as BlogPost[];
   return (
     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
-      {posts.map((post) => (
+      {currentPosts.map((post) => (
         <Link
           key={post._id}
           href={`/blog/${post.slug.current}`}

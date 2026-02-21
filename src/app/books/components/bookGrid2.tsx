@@ -2,8 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { iBookGridParams } from "./types";
 import Pagination from "./Pagination";
+import { Book } from "../../../../types/book";
 
-const BOOKS_PER_PAGE = 6;
+export const BOOKS_PER_PAGE = 6;
 export default function BookGrid2({
   handleSearch,
   filteredBooks,
@@ -13,7 +14,7 @@ export default function BookGrid2({
 }: iBookGridParams) {
   const startIndex = (currentPage - 1) * BOOKS_PER_PAGE;
   const endIndex = startIndex + BOOKS_PER_PAGE;
-  const currentBooks = filteredBooks.slice(startIndex, endIndex);
+  const currentBooks = filteredBooks.slice(startIndex, endIndex) as Book[];
   return (
     <div>
       {currentBooks.length > 0 ? (
@@ -50,7 +51,7 @@ export default function BookGrid2({
           {/* Pagination */}
           <Pagination
             currentPage={currentPage}
-            filteredBooks={filteredBooks}
+            filteredBooks={filteredBooks as Book[]}
             BOOKS_PER_PAGE={BOOKS_PER_PAGE}
             setCurrentPage={setCurrentPage}
           />

@@ -5,6 +5,8 @@ import { Metadata } from "next";
 import { BlogPost } from "./types";
 import Hero from "./components/Hero";
 import BlogGrid from "./components/BlogGrid";
+import SearchInput from "../books/components/searchInput";
+import BlogCard from "./components/BlogCard";
 
 export const metadata: Metadata = {
   title: "Blog - Dr. Chibueze Ukaegbu | Christian Insights & Faith Articles",
@@ -41,7 +43,7 @@ export default async function BlogPage() {
             </p>
           </div>
         ) : (
-          <BlogGrid posts={posts} />
+          <BlogCard posts={posts} />
         )}
       </div>
     </div>

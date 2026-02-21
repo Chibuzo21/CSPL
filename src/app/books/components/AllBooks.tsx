@@ -27,6 +27,7 @@ export default function AllBooks() {
         handleSearch={handleSearch}
         searchQuery={searchQuery}
         filteredBooks={filteredBooks}
+        placeholder='Search by title, author, genre, or description...'
       />
       <BookGrid2
         handleSearch={handleSearch}
