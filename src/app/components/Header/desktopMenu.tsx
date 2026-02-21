@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 export default function DesktopMenu() {
   const pathname = usePathname();
   return (
-    <div className='hidden md:flex space-x-8'>
+    <div className='hidden lg:flex space-x-8'>
       {navlinks.map((nav) => (
         <Link
           key={nav.href}

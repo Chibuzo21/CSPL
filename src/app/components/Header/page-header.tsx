@@ -9,14 +9,16 @@ export default function PageHeader() {
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-3'>
         <div className='flex justify-between h-16 items-center'>
           <div className='shrink-0'>
-            <Link href='/' className='text-2xl font-bold text-gray-700 '>
-              CHIBUEZE UKAEGBU
+            <Link
+              href='/'
+              className='text-2xl font-extrabold tracking-wide text-gray-900 dark:text-white'>
+              Chibueze Ukaegbu
             </Link>
           </div>
           <DesktopMenu />
           {/* Mobile menu button */}
 
-          <div className='md:hidden'>
+          <div className='lg:hidden'>
             <MobileMenu />
           </div>
         </div>

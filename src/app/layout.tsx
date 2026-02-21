@@ -5,7 +5,7 @@ import Footer from "./components/footer";
 import ClientProvider from "./components/ClientProvider";
 
 export const metadata: Metadata = {
-  title: "CSPL",
+  title: "Chibueze Ukaegbu",
   description:
     "Discover inspiring Christian books by Dr. Chibueze Ukaegbu. Biblical fiction, devotionals, spiritual growth guides, and faith-building literature. Read previews and find your next transformative read.",
   keywords: [

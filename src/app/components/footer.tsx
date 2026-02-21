@@ -70,7 +70,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href='mailto:uchibueze@cspl.com'
+                  href='mailto:uchibueze@chibuezeukaegbu.com'
                   className='text-primary-900 dark:text-primary-400 font-medium hover:underline transition-colors'>
                   Email
                 </a>
