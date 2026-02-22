@@ -17,8 +17,7 @@ export default function AllBooks() {
     return books.filter(
       (book) =>
         book.title.toLowerCase().includes(query) ||
-        book.description.toLowerCase().includes(query) ||
-        book.genre.some((g) => g.toLowerCase().includes(query)),
+        book.description.toLowerCase().includes(query),
     );
   }, [searchQuery]);
   return (
@@ -27,7 +26,7 @@ export default function AllBooks() {
         handleSearch={handleSearch}
         searchQuery={searchQuery}
         filteredBooks={filteredBooks}
-        placeholder='Search by title, author, genre, or description...'
+        placeholder='Search by title, or description...'
       />
       <BookGrid2
         handleSearch={handleSearch}
