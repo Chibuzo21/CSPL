@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function QuickLinks() {
@@ -8,7 +9,7 @@ export default function QuickLinks() {
       </h3>
       <ul className='space-y-3'>
         <li>
-          <a
+          <Link
             href='/faq'
             className='text-white dark:text-primary-400 font-medium group-hover:underline transition-colors flex items-center'>
             <svg
@@ -24,10 +25,10 @@ export default function QuickLinks() {
               />
             </svg>
             Visit our FAQ page
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             href='/books'
             className='text-white dark:text-primary-400 font-medium group-hover:underline transition-colors flex items-center'>
             <svg
@@ -43,10 +44,29 @@ export default function QuickLinks() {
               />
             </svg>
             Browse all books
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
+            href='/blog'
+            className='text-white dark:text-primary-400 font-medium group-hover:underline transition-colors flex items-center'>
+            <svg
+              className='w-5 h-5 mr-2'
+              fill='none'
+              stroke='currentColor'
+              viewBox='0 0 24 24'>
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth={2}
+                d='M9 12h6m-6 4h6M7 4h10a2 2 0 012 2v12a2 2 0 01-2 2H7a2 2 0 01-2-2V6a2 2 0 012-2z'
+              />
+            </svg>
+            Read our Blog
+          </Link>
+        </li>
+        <li>
+          <Link
             href='/about'
             className='text-white dark:text-primary-400 font-medium group-hover:underline transition-colors flex items-center'>
             <svg
@@ -62,7 +82,7 @@ export default function QuickLinks() {
               />
             </svg>
             About the author
-          </a>
+          </Link>
         </li>
       </ul>
     </div>
