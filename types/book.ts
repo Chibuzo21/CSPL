@@ -15,7 +15,6 @@ export interface Book {
   amazonLink: string;
   description: string;
   intro: string;
-  genre: string[];
   publishedDate: string;
   isbn?: string;
   reviews?: Review[];

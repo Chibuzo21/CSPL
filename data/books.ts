@@ -10,7 +10,6 @@ export const books: Book[] = [
       "https://www.amazon.com/Kingdom-Driven-Business-Stewardship-Leadership-Marketplace-ebook/dp/B0GL55YBYH",
     description:
       "A Biblical Framework for Christian Stewardship, Ethical Leadership, and Wealth Creation in the Modern Marketplace.",
-    genre: ["Mystery", "Thriller", "Adventure"],
     publishedDate: "2024-01-15",
     reviews: [
       {
@@ -63,7 +62,7 @@ Ultimately, the book affirms that when business is surrendered to Christ’s lor
       "https://www.amazon.com/SINS-FATHERS-Theological-Examination-Generational-ebook/dp/B0GHMV7MKW",
     description:
       "A Biblical and Theological Examination of Generational Curses, Ancestral Sin, and the Finished Work of Christ.",
-    genre: ["Horror", "Mystery", "Supernatural"],
+
     publishedDate: "2026-01-21",
     reviews: [
       {
@@ -109,7 +108,6 @@ Ultimately, SINS OF THE FATHERS calls believers back to confidence in Christ, so
       "https://www.amazon.com/Written-God-Scripture-Profound-Revelation-ebook/dp/B0G3P66D89",
     description:
       " A Profound Journey Through Christ’s Revelation Across the Holy Bible.",
-    genre: ["Horror", "Mystery", "Supernatural"],
     publishedDate: "2025-11-24",
     reviews: [
       {
@@ -146,7 +144,6 @@ Ultimately, SINS OF THE FATHERS calls believers back to confidence in Christ, so
     amazonLink:
       "https://www.amazon.com/JOSEPH-STORY-FORGIVENESS-JOURNEY-THROUGH-ebook/dp/B0GDP4H1HZ",
     description: "A journey through God's plan.",
-    genre: ["Horror", "Mystery", "Supernatural"],
     publishedDate: "2026-01-02",
     reviews: [
       {
@@ -190,7 +187,6 @@ Written especially with young readers in mind but meaningful for all ages, the b
       "https://www.amazon.com/Legacy-Ancestry-Inheritance-Understanding-Redemption-ebook/dp/B0G674GQYZ",
     description:
       "Debunking the Myths of Spiritual Inheritance: Understanding the Power of Redemption Over Ancestral Curses.",
-    genre: ["Horror", "Mystery", "Supernatural"],
     publishedDate: "2025-12-11",
     reviews: [
       {
@@ -236,7 +232,6 @@ Ultimately, this book is a call to shift from a fear-based digging up of the pas
       "https://www.amazon.com/DEITY-LORD-JESUS-CHRIST-EXAMINATION-ebook/dp/B0G2KPGS4X",
     description:
       "Unveiling the Eternal Truths of the Almighty through Scripture",
-    genre: ["Horror", "Mystery", "Supernatural"],
     publishedDate: "2025-11-17",
     reviews: [
       {
@@ -284,7 +279,6 @@ The book concludes with an invitation: having seen Christ revealed through Scrip
       "https://www.amazon.com/Bridge-That-Love-Built-Discovering-ebook/dp/B0G4VKYN7M",
     description:
       " Discovering the One Mediator Who Closes the Gap Between Us and God",
-    genre: ["Horror", "Mystery", "Supernatural"],
     publishedDate: "2025-12-03",
     reviews: [
       {
@@ -325,7 +319,6 @@ Richly devotional and theologically profound, The Bridge That Love Built guides 
     amazonLink:
       "https://www.amazon.com/ANOINTING-LIVES-ME-CHRIST-ANOINTED-ebook/dp/B07B1VC5WM",
     description: "  Christ the anointed one lives in me",
-    genre: ["Horror", "Mystery", "Supernatural"],
     publishedDate: "2018-02-23",
     reviews: [
       {
@@ -367,7 +360,6 @@ Richly devotional and theologically profound, The Bridge That Love Built guides 
       "https://www.amazon.com/Times-Like-This-Discovering-Unshakeable-ebook/dp/B0G2FHCKSD",
     description:
       "A Believer's Anchor of Hope : Discovering Unshakeable Faith Amidst a Turbulent World",
-    genre: ["Horror", "Mystery", "Supernatural"],
     publishedDate: "2025-11-15",
     reviews: [
       {
@@ -404,7 +396,7 @@ Richly devotional and theologically profound, The Bridge That Love Built guides 
     amazonLink:
       "https://www.amazon.com/FRUIT-UNFORGIVENESS-DANGERS-UNFORGIVING-SPIRIT-ebook/dp/B074D39RTP",
     description: "Dangers of unforgiving spirit",
-    genre: ["Horror", "Mystery", "Supernatural"],
+
     publishedDate: "2017-07-28",
     reviews: [
       {
@@ -445,7 +437,7 @@ THIS BOOK IS A MUST READ FOR EVERYONE AND A VALUABLE RESOURCE MATERIAL FOR THOSE
     amazonLink:
       "https://www.amazon.com/PAIN-PLENTY-ABUNDANCE-FORGIVENESS-RELEASING-ebook/dp/B0GB2V2Y7M",
     description: "Dangers of unforgiving spirit",
-    genre: ["Horror", "Mystery", "Supernatural"],
+
     publishedDate: "2025-12-20",
     reviews: [
       {
@@ -491,7 +483,6 @@ Ultimately, From Pain to Plenty invites readers into a deeper understanding of a
     amazonLink:
       "https://www.amazon.com/WE-ARE-FAMILY-Members-Household-ebook/dp/B07753Y1PS",
     description: "We Are Members Of God's Household",
-    genre: ["Horror", "Mystery", "Supernatural"],
     publishedDate: "2017-11-02",
     reviews: [
       {

@@ -1,5 +1,6 @@
 import React from "react";
 import SocialMedia from "./SocialMedia";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -25,32 +26,39 @@ export default function Footer() {
             </h3>
             <ul className='space-y-2'>
               <li>
-                <a
+                <Link
                   href='/'
                   className='text-primary-900 dark:text-primary-400 font-medium hover:underline transition-colors'>
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href='/books'
                   className='text-primary-900 dark:text-primary-400 font-medium hover:underline transition-colors'>
                   All Books
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
+                  href='/blog'
+                  className='text-primary-900 dark:text-primary-400 font-medium hover:underline transition-colors'>
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link
                   href='/about'
                   className='text-primary-900 dark:text-primary-400 font-medium hover:underline transition-colors'>
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href='/faq'
                   className='text-primary-900 dark:text-primary-400 font-medium hover:underline transition-colors'>
                   FAQ
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

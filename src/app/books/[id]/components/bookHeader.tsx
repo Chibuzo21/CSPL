@@ -36,19 +36,6 @@ export default function BookHeader({ book }: BookParams) {
             {book.description}
           </p>
 
-          {/* Genre Tags */}
-          {book.genre && book.genre.length > 0 && (
-            <div className='flex flex-wrap gap-2 mb-6'>
-              {book.genre.slice(0, 3).map((genre, index) => (
-                <span
-                  key={index}
-                  className='px-3 py-1 bg-primary-50 dark:bg-primary-900/20 text-primary-900 dark:text-primary-300 rounded-full text-sm font-medium'>
-                  {genre}
-                </span>
-              ))}
-            </div>
-          )}
-
           {/* CTA Buttons */}
           <div className='flex flex-col sm:flex-row gap-3'>
             <a

@@ -36,7 +36,7 @@ export async function generateMetadata({
   return {
     title: `${book.title} - ${book.author}`,
     description: book.description,
-    keywords: [...book.genre, "book", "preview", "read online"],
+    keywords: ["book", "preview", "read online"],
     openGraph: {
       title: book.title,
       description: book.description,
